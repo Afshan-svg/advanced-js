@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learrning from Chai aur Code</title>
+    <style>
+        * {
+            background-color: #212121;
+            color: #ffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">Welcome to DOM Document Object Model <span style="display: none;">Chai aur
+                Code</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2></h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <input type="password">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+<!-- we can use console.log(document) to get info about the dom document -->
+<!-- console.log(document.links) to get the links on the dom is returns as  an HTML Collections  -->
+<!-- DOM Manipulation 
+Like we take an element by ID and manipulate it
+for example document.getElementByID("h1-id").innerHTML = <h1>Chai Aur Code</h1>
+-->
+
+<!-- We can target from both i.e ID and Class -->
+<!-- In query selector whatever we get are in node list so we cant use array properties in it -->
+<!-- To verify the above open the prototype and you will see no map in it hence we cant use it as an array
+ -->
+ <!-- Query selector all always return the data in NodeList  -->
+ <!-- document.getElementByClassName returns html Collections which are different from node lists -->
+
+</html>
+
+<!-- Convert an HTML Collection to an Array and use ForEach -->
+
+<!-- const myList = document.getElementsByClassName('list-item')
+undefined
+myList
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+const convertedArray = Array.fr
+undefined
+const convertedArray = Array.from(myList)
+undefined
+convertedArray
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-item3: li.list-itemlength: 4[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+convertedArray.forEach(function (li) {
+    li.style.color = "orange"
+}) -->
